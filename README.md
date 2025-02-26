@@ -10,11 +10,11 @@ The player interacts with a dungeon (Dungeon) that contains rooms, NPCs, and ite
 
 The project is divided into three main parts **(assignment1, assignment2, assignment3)**:
 
-**assignment1** – Implementation of the Builder pattern for dungeon creation.
+1) **assignment1** – Implementation of the Builder pattern for dungeon creation.
 
-**assignment2** – Implementation of the Prototype pattern for cloning rooms and items.
+2) **assignment2** – Implementation of the Prototype pattern for cloning rooms and items.
 
-**assignment3** – Integration of Builder and Prototype into a single system.
+3) **assignment3** – Integration of Builder and Prototype into a single system.
 
 ## Main Classes and Their Roles
 
