@@ -22,20 +22,34 @@ public class MUDCombinedDemo {
         Room prototype = new Room("Hall",2,true, items);
         builder1.addRoom(prototype);
 
-        Dungeon dungeon = builder1.build();
-        System.out.println(prototype);
-
         for (int i = 1; i <= 4; i++) {
             Room clonedRoom = prototype.cloneEntity(i);
-            dungeon.addRoom(clonedRoom);
-            System.out.println(clonedRoom);
+            builder1.addRoom(clonedRoom);
         }
-//        The output of the code
-//        Room{roomName='Hall', capacity=2, opened=true, inventory=[Knife (very dangerous), Swore (ancient item)]}
-//        Room{roomName='HallClone #1', capacity=2, opened=true, inventory=[Knife (very dangerous), Swore (ancient item)]}
-//        Room{roomName='HallClone #2', capacity=2, opened=true, inventory=[Knife (very dangerous), Swore (ancient item)]}
-//        Room{roomName='HallClone #3', capacity=2, opened=true, inventory=[Knife (very dangerous), Swore (ancient item)]}
-//        Room{roomName='HallClone #4', capacity=2, opened=true, inventory=[Knife (very dangerous), Swore (ancient item)]}
+
+        Dungeon dungeon = builder1.build();
+        dungeon.info();
+
+        //Dungeon: scary dungeons
+        //Rooms:
+        // - Hall (Capacity: 2)
+        // - HallClone #1 (Capacity: 2)
+        // - HallClone #2 (Capacity: 2)
+        // - HallClone #3 (Capacity: 2)
+        // - HallClone #4 (Capacity: 2)
+        //NPCs:
+        //Inventory:
+        // - Knife (Description: very dangerous)
+        // - Swore (Description: ancient item)
+        // - Knife (Description: very dangerous)
+        // - Swore (Description: ancient item)
+        // - Knife (Description: very dangerous)
+        // - Swore (Description: ancient item)
+        // - Knife (Description: very dangerous)
+        // - Swore (Description: ancient item)
+        // - Knife (Description: very dangerous)
+        // - Swore (Description: ancient item)
+
 
 
 
